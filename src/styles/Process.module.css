@@ -1,0 +1,149 @@
+.process {
+  background: var(--color-dark-blue);
+  padding: 120px 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.sectionLabel {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.labelLine {
+  width: 40px;
+  height: 2px;
+  background: var(--color-gold);
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 44px;
+  font-weight: 700;
+  color: var(--color-white);
+  line-height: 1.2;
+}
+
+.titleHighlight {
+  color: var(--color-gold);
+  font-weight: 800;
+}
+
+.subtitle {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--color-gray-light);
+  max-width: 600px;
+  margin: 16px auto 0;
+  line-height: 1.7;
+}
+
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.timelineLine {
+  position: absolute;
+  left: 40px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(201, 168, 76, 0.2);
+}
+
+.timelineProgress {
+  position: absolute;
+  left: 40px;
+  top: 0;
+  width: 2px;
+  height: 0;
+  background: var(--color-gold);
+}
+
+.step {
+  display: flex;
+  gap: 40px;
+  padding: 40px 0;
+  position: relative;
+}
+
+.stepNumber {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  border: 2px solid rgba(201, 168, 76, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-gold);
+  background: var(--color-dark-blue);
+  position: relative;
+  z-index: 2;
+  transition: all 0.4s ease;
+}
+
+.step:hover .stepNumber {
+  background: var(--color-gold);
+  color: var(--color-dark);
+  border-color: var(--color-gold);
+}
+
+.stepContent {
+  padding-top: 16px;
+}
+
+.stepTitle {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-white);
+  margin-bottom: 12px;
+}
+
+.stepDescription {
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--color-gray-light);
+  line-height: 1.7;
+  max-width: 500px;
+}
+
+@media (max-width: 1024px) {
+  .process { padding: 80px 40px; }
+  .title { font-size: 36px; }
+}
+
+@media (max-width: 768px) {
+  .process { padding: 60px 20px; }
+  .title { font-size: 30px; }
+  .step { gap: 20px; padding: 24px 0; }
+  .stepNumber { width: 56px; height: 56px; font-size: 20px; }
+  .timelineLine { left: 27px; }
+  .timelineProgress { left: 27px; }
+  .stepTitle { font-size: 20px; }
+  .stepDescription { font-size: 14px; }
+}

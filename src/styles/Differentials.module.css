@@ -1,0 +1,114 @@
+.differentials {
+  background: var(--color-light);
+  padding: 120px 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.sectionLabel {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.labelLine {
+  width: 40px;
+  height: 2px;
+  background: var(--color-gold);
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 44px;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.titleHighlight {
+  color: var(--color-gold);
+  font-weight: 800;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.item {
+  display: flex;
+  gap: 24px;
+  padding: 36px;
+  background: var(--color-white);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.4s ease;
+}
+
+.item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.08);
+}
+
+.itemIcon {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  background: var(--color-dark-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemIcon svg {
+  width: 28px;
+  height: 28px;
+  stroke: var(--color-gold);
+  stroke-width: 1.5;
+  fill: none;
+}
+
+.itemTitle {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-text-dark);
+  margin-bottom: 8px;
+}
+
+.itemDescription {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--color-gray);
+  line-height: 1.7;
+}
+
+@media (max-width: 1024px) {
+  .differentials { padding: 80px 40px; }
+  .title { font-size: 36px; }
+}
+
+@media (max-width: 768px) {
+  .differentials { padding: 60px 20px; }
+  .grid { grid-template-columns: 1fr; gap: 24px; }
+  .title { font-size: 30px; }
+  .item { padding: 24px; }
+}

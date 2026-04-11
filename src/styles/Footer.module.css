@@ -1,0 +1,124 @@
+.footer {
+  background: #0a1219;
+  padding: 80px 80px 40px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 60px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.brand {
+  max-width: 300px;
+}
+
+.brandDescription {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--color-gray);
+  line-height: 1.7;
+  margin-top: 24px;
+}
+
+.columnTitle {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-white);
+  margin-bottom: 24px;
+}
+
+.columnLink {
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--color-gray);
+  margin-bottom: 12px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.columnLink:hover {
+  color: var(--color-gold);
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.contactIcon {
+  width: 20px;
+  height: 20px;
+  color: var(--color-gold);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.contactText {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--color-gray);
+  line-height: 1.6;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.copyright {
+  font-size: 13px;
+  color: var(--color-gray);
+}
+
+.socials {
+  display: flex;
+  gap: 16px;
+}
+
+.socialLink {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--color-gray);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.socialLink:hover {
+  border-color: var(--color-gold);
+  color: var(--color-gold);
+  transform: translateY(-2px);
+}
+
+.socialLink svg {
+  width: 18px;
+  height: 18px;
+}
+
+@media (max-width: 1024px) {
+  .footer { padding: 60px 40px 30px; }
+  .top { grid-template-columns: 1fr 1fr; gap: 40px; }
+}
+
+@media (max-width: 768px) {
+  .footer { padding: 48px 20px 24px; }
+  .top { grid-template-columns: 1fr; gap: 32px; }
+  .bottom { flex-direction: column; gap: 20px; text-align: center; }
+}
