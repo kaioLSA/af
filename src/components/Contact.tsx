@@ -18,8 +18,15 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const text = `Olá! Meu nome é ${formData.name}.%0A%0AServiço: ${formData.service}%0AEmail: ${formData.email}%0ATelefone: ${formData.phone}%0A%0AMensagem: ${formData.message}`;
-    window.open(`https://wa.me/5500000000000?text=${text}`, '_blank');
+    const introduction = "Olá! Vim do site AF Engenharia e gostaria de mais informações.";
+    const messageBody = `Meu nome é ${formData.name}.
+Meu e-mail é ${formData.email}.
+Meu telefone é ${formData.phone}.
+Gostaria de saber mais sobre ${formData.service}.
+Minha mensagem: ${formData.message}`;
+    
+    const text = encodeURIComponent(`${introduction}\n\n${messageBody}`);
+    window.open(`https://wa.me/5511966483111?text=${text}`, '_blank');
   };
 
   return (
@@ -61,7 +68,7 @@ const Contact = () => {
               </div>
               <div>
                 <div className={styles.contactLabel}>Telefone</div>
-                <div className={styles.contactValue}>(00) 00000-0000</div>
+                <div className={styles.contactValue}>(11) 96648-3111</div>
               </div>
             </div>
 
@@ -132,7 +139,7 @@ const Contact = () => {
               <input
                 type="tel"
                 name="phone"
-                placeholder="(00) 00000-0000"
+                placeholder="(11) 96648-3111"
                 className={styles.formInput}
                 value={formData.phone}
                 onChange={handleChange}

@@ -40,7 +40,7 @@ const CTA = () => {
   }, []);
 
   const handleWhatsApp = () => {
-    window.open('https://wa.me/5500000000000?text=Olá! Gostaria de solicitar um orçamento.', '_blank');
+    window.open('https://wa.me/5511966483111?text=Olá! Gostaria de solicitar um orçamento.', '_blank');
   };
 
   return (

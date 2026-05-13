@@ -187,7 +187,7 @@ const Preloader = ({ onComplete }: PreloaderProps) => {
               fill="transparent"
               stroke="#ffffff"
               strokeWidth="1.2"
-              letterSpacing="-3"
+              letterSpacing="-18"
               strokeDasharray="600"
               strokeDashoffset="600"
             >

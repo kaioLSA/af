@@ -23,7 +23,7 @@ const LogoIcon = ({ className, size = 50, variant = 'light' }: LogoIconProps) =>
         fontSize="55"
         fontWeight="bold"
         fill={afColor}
-        letterSpacing="-3"
+        letterSpacing="-9"
       >
         AF
       </text>

@@ -37,7 +37,7 @@ const Logo = ({ className, width = 280, height = 200, variant = 'light' }: LogoP
         fontSize="120"
         fontWeight="bold"
         fill={afColor}
-        letterSpacing="-5"
+        letterSpacing="-20"
       >
         AF
       </text>
